@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 class Resume extends Component {
     constructor(props) {
         super(props);
-        this.state = {resumes: []}
+        this.state = {resumes: []};
     }
 
     componentDidMount() {
@@ -14,13 +14,10 @@ class Resume extends Component {
             .then(resumes => this.setState({resumes}));
     }
 
-    formatDates = (date) => {
-        try {
-            let monthName = date.toLocaleString('en-us', {month: 'short'});
-            return monthName + ' ' + date.getFullYear()
-        } catch (err) {
-            console.log(err);
-        }
+    formatDates = (d) => {
+        let date = new Date(d);
+        const monthName = date.toLocaleString('en-us', {month: 'short'});
+        return monthName + ' ' + date.getFullYear();
     };
 
     render() {
