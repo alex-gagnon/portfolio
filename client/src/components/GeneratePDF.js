@@ -4,13 +4,10 @@ import Resume from './Resume'
 import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import ButtonToolbar from "react-bootstrap/ButtonToolbar";
 
 class GeneratePDF extends Component {
     resume;
-
-    constructor(props) {
-        super(props);
-    }
 
     exportPDF = () => {
         this.resume.save()
@@ -19,13 +16,14 @@ class GeneratePDF extends Component {
     render() {
 
         return (
-            <Col id='resume-container' className='justify-content-center'>
-                <Row className='justify-content-center'>
+            <Col id="resume-container" className='justify-content-center' style={{backgroundColor: "#333"}}>
+                <ButtonToolbar className='justify-content-center'>
                     <Button variant='primary' onClick={this.exportPDF}>download</Button>
-                </Row>
-                <Row id='pdf-page'>
-                    <Col>
-                        <PDFExport author="Alexander Gagnon"
+                </ButtonToolbar>
+                <Row key='pdf-page' id='pdf-page'>
+                    <Col key='pdf-col'>
+                        <PDFExport key='pdf-export'
+                                   author="Alexander Gagnon"
                                    paperSize={'letter'}
                                    fileName="Alexander_Gagnon_Resume.pdf"
                                    title="Alexander Gagnon Resume"
@@ -35,11 +33,12 @@ class GeneratePDF extends Component {
                                    "jquery, mongodb, mysql, sql, heroku, git, jira, fiddler, postman, node,js," +
                                    "express, flask, website, software qa"}
                                    ref={(r) => this.resume = r}>
-                            {/* Include Resume data */}
-                            <Resume/>
+                            {/* Include Resume component */}
+                            <Resume key={'super-resume'}/>
                         </PDFExport>
                     </Col>
                 </Row>
+
             </Col>
         )
     }
