@@ -9,6 +9,12 @@ import ButtonToolbar from "react-bootstrap/ButtonToolbar";
 class GeneratePDF extends Component {
     resume;
 
+    constructor(props) {
+        super(props);
+
+        this.exportPDF = this.exportPDF.bind(this);
+    }
+
     exportPDF = () => {
         this.resume.save()
     };

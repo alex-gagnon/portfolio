@@ -8,8 +8,10 @@ class App extends Component {
     render() {
         return (
             <Router key={'router'}>
-                {<Navigation key={'super-navigation'}/>}
                 <div>
+                    {<Navigation key={'super-navigation'}/>}
+                </div>
+                <div style={{marginTop: "10vh"}}>
                     <Route key={'super-portfolio'} path='/' exact component={Portfolio}/>
                     <Route key={'super-pdf'} path='/resume' exact component={GeneratePDF}/>
                 </div>

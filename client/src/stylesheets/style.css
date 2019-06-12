@@ -8,6 +8,16 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+#navi {
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+#brand {
+    padding: 10px;
+    font-size: 32px;
+}
+
 #resume-container {
     display: grid;
 }
