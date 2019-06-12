@@ -22,21 +22,21 @@ class Resume extends Component {
 
     render() {
         return (
-            <Row id='resume'>
+            <Row key={'resume'} id='resume'>
                 {this.state.resumes.map((resume) =>
-                    <div key={resume.id}>
-                        <div>
-                            <h1 id='name'>{resume.name}</h1>
-                            <h2 id='position'>{resume.position}</h2>
-                            <ul id='contact-info'>
-                                <li id='email'>{resume.contact.email}</li>
-                                <li id='phoneNumber'>{resume.contact.phoneNumber}</li>
-                                <li id='github'>{resume.contact.github}</li>
-                                <li id='portfolio'>{resume.contact.portfolio}</li>
+                    <div key={resume.name}>
+                        <div key={resume.id}>
+                            <h1 key={resume.name} id='name'>{resume.name}</h1>
+                            <h2 key={resume.position} id='position'>{resume.position}</h2>
+                            <ul key={resume.id} id='contact-info'>
+                                <li key={resume.contact.email} id='email'>{resume.contact.email}</li>
+                                <li key={resume.contact.phoneNumber} id='phoneNumber'>{resume.contact.phoneNumber}</li>
+                                <li key={resume.contact.github} id='github'>{resume.contact.github}</li>
+                                <li key={resume.contact.portfolio} id='portfolio'>{resume.contact.portfolio}</li>
                             </ul>
                         </div>
-                        <Row>
-                            <Col>
+                        <Row key={'about'}>
+                            <Col key={'employment-center'}>
                                 <h3>Professional Experience</h3>
                                 {resume.employment.map(({_id, name, position, address, employment_status, experience}) =>
                                     <div key={_id}>
@@ -51,8 +51,11 @@ class Resume extends Component {
                                             }
                                         </h5>
                                         <ul className='employment-experience'>
-                                            {experience.map((item) => <li><span
-                                                className='angle-right-arrows'>&#187;</span> {item}</li>)}
+                                            {experience.map((item) =>
+                                                <li key={item}>
+                                                    <span className='angle-right-arrows'>&#187;</span> {item}
+                                                </li>
+                                            )}
                                         </ul>
                                     </div>
                                 )}
@@ -61,7 +64,7 @@ class Resume extends Component {
                                 <Col>
                                     <h3>Skills</h3>
                                     {resume.skills.map(({name, skillSet}) =>
-                                        <div>
+                                        <div key={name}>
                                             <h4>{name}</h4>
                                             <p>{skillSet.join(', ')}</p>
                                         </div>
@@ -70,7 +73,7 @@ class Resume extends Component {
                                 <Col>
                                     <h3>Education</h3>
                                     {resume.education.map(({name, enrollment, address, degrees}) =>
-                                        <div>
+                                        <div key={name}>
                                             <h4>{name}</h4>
                                             <h5>
                                                 {this.formatDates(enrollment.started) +
@@ -79,7 +82,7 @@ class Resume extends Component {
                                             </h5>
                                             <ul>
                                                 {degrees.map(({name, gpa}) =>
-                                                    <li>{name + ' // ' + gpa + ' gpa'}</li>
+                                                    <li key={name}>{name + ' // ' + gpa + ' gpa'}</li>
                                                 )}
                                             </ul>
                                         </div>

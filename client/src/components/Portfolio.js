@@ -14,10 +14,10 @@ class Portfolio extends Component {
 
     render() {
         return (
-            <div>
+            <div key={'portfolio'}>
                 {this.state.resumes.map(resume =>
-                    <div>
-                        <h1 key={resume.id}>{resume.name}</h1>
+                    <div key={resume.id}>
+                        <h1 key={resume.name} id='portfolio-name'>{resume.name}</h1>
                     </div>
                 )}
             </div>
