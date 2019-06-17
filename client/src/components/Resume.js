@@ -10,7 +10,7 @@ import Col from "react-bootstrap/Col";
 class Resume extends Component {
     constructor(props) {
         super(props);
-        this.state = {resume: {}}
+        this.state = {resume: {}};
     }
 
     componentDidMount() {

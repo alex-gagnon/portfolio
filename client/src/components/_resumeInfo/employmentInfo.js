@@ -7,7 +7,7 @@ function employmentInfo(resume) {
         <div>
             {resume.employment &&
             resume.employment.map(({_id, name, position, address, employment_status, experience}) =>
-                <div key={_id} className='employment'>
+                <div key={_id}>
                     <h4>{position} <span style={{color: '#888'}}>@ {name}</span></h4>
                     <h5>
                         {
