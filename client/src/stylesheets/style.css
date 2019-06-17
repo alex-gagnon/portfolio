@@ -87,16 +87,12 @@ h4, h5 {
     margin-top: 20px;
 }
 
-#about {
-    margin-top: 20px;
-}
-
-.company-name {
-    color: darkgray;
+.employment-info *, .additional-info * {
+    font-size: .7rem;
 }
 
 .angle-right-arrows {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
 }
 
