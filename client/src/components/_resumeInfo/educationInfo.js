@@ -3,10 +3,11 @@ import friendlyDates from "../friendlyDates";
 
 function educationInfo(resume) {
     return (
-        <div className='education'>
+        <div>
+            <h3 className="resume-header">Education</h3>
             {resume.education &&
             resume.education.map(({name, enrollment, address, degrees}) =>
-                <div key={name}>
+                <div key={name} className="additional-info">
                     <h4>{name}</h4>
                     <h5>
                         {

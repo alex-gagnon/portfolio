@@ -38,18 +38,18 @@ class Resume extends Component {
             <div id='resume'>
                 <Row>
                     <Col>
-                        <h1>{resume.name}</h1>
-                        <h2>{resume.position}</h2>
+                        <h1 id="resume-name">{resume.name}</h1>
+                        <h2 id="resume-position">{resume.position}</h2>
                         <div>
                             {contact_info}
                         </div>
                     </Col>
                 </Row>
                 <Row>
-                    <Col className='employment-info'>
+                    <Col>
                         {employment_info}
                     </Col>
-                    <Col className='additional-info'>
+                    <Col>
                         {skill_info}
                         {education_info}
                         {extra_info}

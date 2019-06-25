@@ -5,9 +5,10 @@ import friendlyDates from "../friendlyDates"
 function employmentInfo(resume) {
     return (
         <div>
+            <h3 className="resume-header">Experience</h3>
             {resume.employment &&
             resume.employment.map(({_id, name, position, address, employment_status, experience}) =>
-                <div key={_id}>
+                <div key={_id} className="employment-info">
                     <h4>{position} <span style={{color: '#888'}}>@ {name}</span></h4>
                     <h5>
                         {
@@ -15,8 +16,7 @@ function employmentInfo(resume) {
                             ${(
                                 (employment_status.current && 'Present') ||
                                 (!employment_status.current && friendlyDates(employment_status.ended))
-                            )} // 
-                            ${address}`
+                            )} // ${address}`
                         }
                     </h5>
                     <ul>
