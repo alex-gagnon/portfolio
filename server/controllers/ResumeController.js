@@ -3,7 +3,7 @@ const Res = mongoose.model('Resume');
 
 const resumeList = (req, res) => {
     Res
-        .find()
+        .findOne()
         .exec((err, resume) => {
             res
                 .status(200)
