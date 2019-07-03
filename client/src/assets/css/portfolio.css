@@ -21,7 +21,7 @@
 
 /* Portfolio section styling */
 .portfolio-section-header {
-    background: -webkit-linear-gradient(#000, #222, #999, #222, #000);
+    background: -webkit-linear-gradient(#000, #222, #999);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
