@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import '../assets/css/resume.css'
 import contactInfo from "./_resumeInfo/contactInfo";
 import employmentInfo from "./_resumeInfo/employmentInfo";
 import skillInfo from "./_resumeInfo/skillInfo";

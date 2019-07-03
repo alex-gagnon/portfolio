@@ -1,5 +1,5 @@
 import React from "react";
-import friendlyDates from "../friendlyDates";
+import friendlyDates from "../_includes/friendlyDates";
 
 function educationInfo(resume) {
     return (

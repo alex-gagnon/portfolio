@@ -7,7 +7,7 @@ class Navigation extends Component {
     render() {
         return (
             <Navbar collapseOnSelect expand="md" bg="light" variant="light" fixed="top">
-                <Navbar.Brand href="/#" id="brand">AG</Navbar.Brand>
+                <Navbar.Brand href="/" id="brand">AG</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
