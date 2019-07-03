@@ -1,0 +1,35 @@
+@import "_partials/smoky_effect.scss";
+
+#portfolio {
+  margin-top: 80px;
+  color: #1d1f20;
+}
+
+#return-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 14px;
+}
+
+#portfolio-intro-header {
+  font-size: 18px;
+}
+
+#portfolio-intro-summary {
+  font-size: 14px;
+}
+
+#portfolio-section-header {
+  text-align: center;
+}
+
+// Prevent Navigation bar overlap of anchors
+.anchor::before {
+  display: block;
+  content: " ";
+  margin-top: -90px;
+  height: 95px;
+  visibility: hidden;
+  pointer-events: none;
+}

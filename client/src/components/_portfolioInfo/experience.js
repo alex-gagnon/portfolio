@@ -1,9 +1,12 @@
 import React from "react";
-import friendlyDates from "../friendlyDates";
+import friendlyDates from "../_includes/friendlyDates";
 
 function experience(resume) {
     return (
         <section id="experience" className="anchor portfolio-section container-fluid">
+            <h3 className="text-center">
+                <span className="portfolio-section-header">Where I've been</span>
+            </h3>
             {resume.employment &&
             resume.employment.map(({name, position, employment_status, experience}, i) =>
                 <div>
