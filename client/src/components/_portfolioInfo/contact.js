@@ -4,15 +4,13 @@ import Button from "react-bootstrap/Button";
 function contact() {
     return (
         <section id="contact" className="container-fluid">
-            <h3>How to get in touch</h3>
-            <div>
-                <p>Feel free to get in touch and say hello!</p>
-            </div>
-            <div>
-                <a href="mailto:alexgagnon227@gmail.com"><Button variant="outline-info">Shoot me an email!</Button></a>
-            </div>
-            <div>
-                <a href="/"><Button variant="outline-dark">Return to top</Button></a>
+            <h3 className="text-center m-5">
+                <span className="portfolio-section-header">How to get in touch</span>
+            </h3>
+            <div className="text-center">
+                <div>
+                    <Button variant="outline-info" href="mailto:alexgagnon227@gmail.com">Shoot me an email!</Button>
+                </div>
             </div>
         </section>
     )

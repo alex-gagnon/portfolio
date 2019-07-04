@@ -1,0 +1,97 @@
+#portfolio {
+    margin-top: 80px;
+    color: #1d1f20;
+}
+
+.portfolio-section {
+    margin-bottom: 20vh;
+}
+
+/* Return to top button */
+#return-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 14px;
+    padding: 8px;
+}
+
+#portfolio-intro-header {
+    font-size: 18px;
+}
+
+#portfolio-intro-summary {
+    font-size: 14px;
+}
+
+
+/* Portfolio section styling */
+.portfolio-section-header {
+    background: -webkit-linear-gradient(#000, #222, #999);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+/* Prevent Navigation bar overlap of anchors */
+.anchor::before {
+    display: block;
+    content: " ";
+    margin-top: -90px;
+    height: 95px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+p span {
+    font-size: 14px;
+}
+
+/* About */
+.latest-technologies {
+    display: flex;
+    justify-content: center;
+}
+
+.latest-technologies ul {
+    margin-right: 40px;
+    font-size: 12px;
+}
+
+.latest-technologies li:nth-child(odd) {
+    background-color: #ddd;
+}
+
+/* Experience */
+#row-experience {
+    /* Keep Nav buttons close together so Tab Content does not change spacing. */
+    height: 3rem;
+}
+
+.job-info h4 {
+    font-size: 16px;
+}
+
+.job-info h5, .job-info li {
+    max-width: 85%;
+    font-size: 14px;
+}
+
+/* Contact */
+#contact-footer {
+    display: flex;
+    justify-content: center;
+}
+
+#contact-footer ul {
+    display: flex;
+}
+
+#contact-footer ul li {
+    margin: 20px 25px;
+    font-size: 14px;
+}
+
+.contact-footer-item, .contact-footer-item:active,
+.contact-footer-item:focus, .contact-footer-item:hover {
+    color: #333;
+}
