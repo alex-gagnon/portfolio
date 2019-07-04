@@ -89,5 +89,6 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
-jsLibraryMappings.xml
+# SSL
+ssl
 
