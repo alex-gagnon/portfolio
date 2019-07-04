@@ -7,6 +7,7 @@ import introduction from "./_portfolioInfo/introduction";
 import Button from "react-bootstrap/Button";
 import Arrow from '../assets/images/returnArrow.svg'
 import Image from "react-bootstrap/Image";
+import footer from "./_portfolioInfo/footer";
 
 class Portfolio extends Component {
     constructor(props) {
@@ -31,6 +32,7 @@ class Portfolio extends Component {
         let about_info;
         let experience_info;
         let contact_info;
+        let footer_info;
 
 
         const resume = this.state.resume;
@@ -40,16 +42,27 @@ class Portfolio extends Component {
             about_info = about();
             experience_info = experience(resume);
             contact_info = contact();
+            footer_info = footer();
         }
 
         return (
             <div key={'portfolio'} id="portfolio">
                 <div key={resume.id}>
-                    {introduction_info}
-                    {about_info}
-                    {experience_info}
-                    {contact_info}
+                    <div id="portfolio-intro-info" className="portfolio-section">
+                        {introduction_info}
+                    </div>
+                    <div id="portfolio-about-info" className="portfolio-section">
+                        {about_info}
+                    </div>
+                    <div id="portfolio-experience-info" className="portfolio-section">
+                        {experience_info}
+                    </div>
+                    <div id="portfolio-contact-info" className="portfolio-section">
+                        {contact_info}
+                    </div>
                 </div>
+                <hr/>
+                {footer_info}
                 <Button id="return-to-top" variant="outline-dark" href="/#">
                     <Image src={Arrow} height="45" width="45"/>
                 </Button>
