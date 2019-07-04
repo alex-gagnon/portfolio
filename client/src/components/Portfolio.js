@@ -5,6 +5,8 @@ import experience from "./_portfolioInfo/experience"
 import contact from "./_portfolioInfo/contact";
 import introduction from "./_portfolioInfo/introduction";
 import Button from "react-bootstrap/Button";
+import Arrow from '../assets/images/returnArrow.svg'
+import Image from "react-bootstrap/Image";
 
 class Portfolio extends Component {
     constructor(props) {
@@ -43,18 +45,14 @@ class Portfolio extends Component {
         return (
             <div key={'portfolio'} id="portfolio">
                 <div key={resume.id}>
-                    {/*<section className="portfolio-section">*/}
-                    {/*    <img src={Image}*/}
-                    {/*         alt="New York Mountains"*/}
-                    {/*         width="1124"*/}
-                    {/*         height="632"/>*/}
-                    {/*</section>*/}
                     {introduction_info}
                     {about_info}
                     {experience_info}
                     {contact_info}
                 </div>
-                <Button id="return-to-top" variant="outline-dark" href="/#">Return to top</Button>
+                <Button id="return-to-top" variant="outline-dark" href="/#">
+                    <Image src={Arrow} height="45" width="45"/>
+                </Button>
             </div>
         )
     }
