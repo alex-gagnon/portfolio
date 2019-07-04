@@ -11,7 +11,7 @@ function introduction(resume) {
                 <h2 key={resume.name} id="portfolio-name">
                     <span>{resume.name}</span>
                 </h2>
-                <h3 id="portfolio-intro-summary">
+                <h3 id="portfolio-intro-summary m-5">
                         <span id="portfolio-intro">
                             I am a {(resume.position && resume.position.toLowerCase())} and I like to break things.
                         </span>
