@@ -5,7 +5,7 @@ function introduction(resume) {
     return (
         <section className="portfolio-section container-fluid">
             <div>
-                <h1 id="portfolio-intro-header" className="smoky">
+                <h1 id="portfolio-intro-header">
                     <span>Hi, my name is</span>
                 </h1>
                 <h2 key={resume.name} id="portfolio-name">
