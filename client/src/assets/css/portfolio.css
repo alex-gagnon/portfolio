@@ -3,6 +3,10 @@
     color: #1d1f20;
 }
 
+.portfolio-section {
+    margin-bottom: 20vh;
+}
+
 /* Return to top button */
 #return-to-top {
     position: fixed;
@@ -53,8 +57,23 @@ p span {
     font-size: 12px;
 }
 
-.latest-technologies ul li:nth-child(odd) {
-    background-color: #f2f2f2;
+.latest-technologies li:nth-child(odd) {
+    background-color: #ddd;
+}
+
+/* Experience */
+#row-experience {
+    /* Keep Nav buttons close together so Tab Content does not change spacing. */
+    height: 3rem;
+}
+
+.job-info h4 {
+    font-size: 16px;
+}
+
+.job-info h5, .job-info li {
+    max-width: 85%;
+    font-size: 14px;
 }
 
 /* Contact */
