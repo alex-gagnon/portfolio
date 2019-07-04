@@ -3,7 +3,7 @@ import React from "react";
 function about() {
     return (
         <section id="about" className="anchor portfolio-section container-fluid">
-            <h3 className="text-center">
+            <h3 className="text-center m-5">
                 <span className="portfolio-section-header">About me</span>
             </h3>
             <p>
@@ -18,7 +18,7 @@ function about() {
                 team where I worked on manual and automated testing web applications and mysql and mongodb
                 databases.
 
-                    Most recently joined the Firebrand Technologies QA Team.</span>
+                    Most recently, I have joined the Firebrand Technologies QA Team.</span>
             </p>
             <p>
                 <span>Here are some of the technologies I have been working with lately:</span>
