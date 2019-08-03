@@ -3,16 +3,20 @@ import Button from "react-bootstrap/Button";
 
 function contact() {
     return (
-        <section id="contact" className="container-fluid">
-            <h3 className="text-center m-5">
-                <span className="portfolio-section-header">How to get in touch</span>
-            </h3>
-            <div className="text-center">
-                <div>
-                    <Button variant="outline-info" href="mailto:alexgagnon227@gmail.com">Shoot me an email!</Button>
+        <div id="contact" className="container-fluid">
+            <div className="card">
+                <div className="card-header">
+                    <h3 className="text-center">
+                        <span className="portfolio-section-header">How to get in touch</span>
+                    </h3>
+                </div>
+                <div className="text-center card-link">
+                    <div>
+                        <Button variant="outline-info" href="mailto:alexgagnon227@gmail.com">Shoot me an email!</Button>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
 
