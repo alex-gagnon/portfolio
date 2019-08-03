@@ -4,7 +4,7 @@
 }
 
 .portfolio-section {
-    margin-bottom: 20vh;
+    margin: 15vh 0;
 }
 
 /* Return to top button */
@@ -16,10 +16,6 @@
     padding: 8px;
 }
 
-#portfolio-intro-header {
-    font-size: 18px;
-}
-
 #portfolio-intro-summary {
     font-size: 14px;
 }
@@ -27,9 +23,6 @@
 
 /* Portfolio section styling */
 .portfolio-section-header {
-    background: -webkit-linear-gradient(#000, #222, #999);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
 }
 
 /* Prevent Navigation bar overlap of anchors */
@@ -49,15 +42,14 @@ p span {
 /* About */
 .latest-technologies {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .latest-technologies ul {
-    margin-right: 40px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
-.latest-technologies li:nth-child(odd) {
+.latest-technologies li:nth-child(even) {
     background-color: #ddd;
 }
 
