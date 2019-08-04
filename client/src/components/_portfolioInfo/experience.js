@@ -9,27 +9,30 @@ import TabPane from "react-bootstrap/TabPane";
 
 function experience(resume) {
     return (
-        <section id="experience" className="anchor portfolio-section container-fluid">
-            <h3 className="text-center m-5">
-                <span className="portfolio-section-header">Where I've been</span>
-            </h3>
-            <div id="section-experience">
-                <TabContainer defaultActiveKey={0}>
-                    {resume.employment &&
-                    resume.employment.map(({name, position, employment_status, experience}, i) =>
-                        <Row id="row-experience">
-                            <Col sm={3}>
-                                <Nav variant="pills" className="flex-column">
-                                    <Nav.Item>
-                                        <Nav.Link eventKey={i}>{name}</Nav.Link>
-                                    </Nav.Item>
-                                </Nav>
-                            </Col>
-                            <Col sm={9}>
-                                <TabContent>
-                                    <TabPane eventKey={i}>
-                                        <div className="job-info">
-                                            <h4><span>{position} <span style={{color: '#888'}}>@ {name}</span></span>
+        <div id="experience" className="anchor container-fluid">
+            <div className="card experience">
+                <div className="card-header">
+                    <h3 className="text-center">
+                        <span className="portfolio-section-header">Where I've been</span>
+                    </h3>
+                </div>
+                <div id="section-experience">
+                    <TabContainer defaultActiveKey={0}>
+                        {resume.employment &&
+                        resume.employment.map(({name, position, employment_status, experience}, i) =>
+                            <Row id="row-experience">
+                                <Col sm={3}>
+                                    <Nav variant="pills" className="flex-column">
+                                        <Nav.Item className="job-name">
+                                            <Nav.Link eventKey={i}><span>{name}</span></Nav.Link>
+                                        </Nav.Item>
+                                    </Nav>
+                                </Col>
+                                <Col sm={6}>
+                                    <TabContent>
+                                        <TabPane eventKey={i} className="job-experience">
+                                            <h4>
+                                                <span>{position} <span style={{color: '#888'}}>@ {name}</span></span>
                                             </h4>
                                             <h5>
                                                 {`${friendlyDates(employment_status.started)} - ${(
@@ -37,22 +40,24 @@ function experience(resume) {
                                                     (!employment_status.current && friendlyDates(employment_status.ended))
                                                 )}`}
                                             </h5>
-                                            <ul>
-                                                {experience.map((item) =>
-                                                    <li key={item}>
-                                                        <span className='angle-right-arrows'>&#187;</span> {item}
-                                                    </li>
-                                                )}
-                                            </ul>
-                                        </div>
-                                    </TabPane>
-                                </TabContent>
-                            </Col>
-                        </Row>
-                    )}
-                </TabContainer>
+                                            <div>
+                                                <ul>
+                                                    {experience.map((item) =>
+                                                        <li key={item}>
+                                                                <span className='angle-right-arrows'>&#187;</span> {item}
+                                                        </li>
+                                                    )}
+                                                </ul>
+                                            </div>
+                                        </TabPane>
+                                    </TabContent>
+                                </Col>
+                            </Row>
+                        )}
+                    </TabContainer>
+                </div>
             </div>
-        </section>
+        </div>
     )
 }
 

@@ -1,10 +1,18 @@
+body {
+    background-color: whitesmoke;
+}
+
+.navbar-toggler {
+    margin: 10px 0;
+}
+
 #portfolio {
     margin-top: 80px;
     color: #1d1f20;
 }
 
 .portfolio-section {
-    margin-bottom: 20vh;
+    margin: 12vh 0;
 }
 
 /* Return to top button */
@@ -16,20 +24,8 @@
     padding: 8px;
 }
 
-#portfolio-intro-header {
-    font-size: 18px;
-}
-
 #portfolio-intro-summary {
     font-size: 14px;
-}
-
-
-/* Portfolio section styling */
-.portfolio-section-header {
-    background: -webkit-linear-gradient(#000, #222, #999);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
 }
 
 /* Prevent Navigation bar overlap of anchors */
@@ -42,6 +38,14 @@
     pointer-events: none;
 }
 
+.card {
+    background-color: transparent;
+}
+
+.card-text, .card-link {
+    padding: 15px;
+}
+
 p span {
     font-size: 14px;
 }
@@ -49,31 +53,54 @@ p span {
 /* About */
 .latest-technologies {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .latest-technologies ul {
-    margin-right: 40px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
-.latest-technologies li:nth-child(odd) {
+.latest-technologies li:nth-child(even) {
     background-color: #ddd;
 }
 
 /* Experience */
-#row-experience {
+
+.job-name {
+    text-align: center;
+    font-size: .8rem;
+}
+
+.job-experience {
+    padding: 15px;
+}
+
+.job-experience * {
+    font-size: .66rem;
+}
+
+@media only screen and (min-width: 800px) {
     /* Keep Nav buttons close together so Tab Content does not change spacing. */
-    height: 3rem;
-}
+    .experience {
+        min-height: 400px;
+    }
 
-.job-info h4 {
-    font-size: 16px;
-}
+    #row-experience {
+        height: 3rem;
+    }
 
-.job-info h5, .job-info li {
-    max-width: 85%;
-    font-size: 14px;
+    .job-name {
+        font-size: 1rem;
+        text-align: initial;
+    }
+
+    .job-experience {
+        padding: 0;
+    }
+
+    .job-experience * {
+        font-size: .85rem;
+    }
 }
 
 /* Contact */
