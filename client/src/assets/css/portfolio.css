@@ -12,7 +12,7 @@ body {
 }
 
 .portfolio-section {
-    margin: 10vh 0;
+    margin: 12vh 0;
 }
 
 /* Return to top button */
@@ -65,6 +65,7 @@ p span {
 }
 
 /* Experience */
+
 .job-name {
     text-align: center;
     font-size: .8rem;
@@ -80,6 +81,10 @@ p span {
 
 @media only screen and (min-width: 800px) {
     /* Keep Nav buttons close together so Tab Content does not change spacing. */
+    .experience {
+        min-height: 400px;
+    }
+
     #row-experience {
         height: 3rem;
     }

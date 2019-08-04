@@ -27,6 +27,7 @@ function technologies() {
                             <ul>
                                 <li>Heroku</li>
                                 <li>AWS</li>
+                                <li>MSSQL</li>
                             </ul>
                         </div>
                     </div>

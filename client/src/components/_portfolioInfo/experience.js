@@ -10,7 +10,7 @@ import TabPane from "react-bootstrap/TabPane";
 function experience(resume) {
     return (
         <div id="experience" className="anchor container-fluid">
-            <div className="card">
+            <div className="card experience">
                 <div className="card-header">
                     <h3 className="text-center">
                         <span className="portfolio-section-header">Where I've been</span>
@@ -31,8 +31,8 @@ function experience(resume) {
                                 <Col sm={6}>
                                     <TabContent>
                                         <TabPane eventKey={i} className="job-experience">
-                                            <h4><span>{position} <span
-                                                style={{color: '#888'}}>@ {name}</span></span>
+                                            <h4>
+                                                <span>{position} <span style={{color: '#888'}}>@ {name}</span></span>
                                             </h4>
                                             <h5>
                                                 {`${friendlyDates(employment_status.started)} - ${(
