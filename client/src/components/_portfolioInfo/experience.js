@@ -23,14 +23,14 @@ function experience(resume) {
                             <Row id="row-experience">
                                 <Col sm={3}>
                                     <Nav variant="pills" className="flex-column">
-                                        <Nav.Item>
-                                            <Nav.Link eventKey={i}><span className="job-name">{name}</span></Nav.Link>
+                                        <Nav.Item className="job-name">
+                                            <Nav.Link eventKey={i}><span>{name}</span></Nav.Link>
                                         </Nav.Item>
                                     </Nav>
                                 </Col>
                                 <Col sm={6}>
                                     <TabContent>
-                                        <TabPane eventKey={i}>
+                                        <TabPane eventKey={i} className="job-experience">
                                             <h4><span>{position} <span
                                                 style={{color: '#888'}}>@ {name}</span></span>
                                             </h4>

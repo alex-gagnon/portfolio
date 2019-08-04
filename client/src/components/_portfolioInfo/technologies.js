@@ -10,23 +10,25 @@ function technologies() {
                             <span className="portfolio-section-header">Latest technologies I've been working with</span>
                         </h3>
                     </div>
-                    <div className="latest-technologies">
-                        <ul>
-                            <li>Python</li>
-                            <li>Javascript (ES6+)</li>
-                            <li>React</li>
-                            <li>Node.js</li>
-                        </ul>
-                        <ul>
-                            <li>HTML & CSS</li>
-                            <li>Express</li>
-                            <li>MongoDB</li>
-                            <li>MySQL</li>
-                        </ul>
-                        <ul>
-                            <li>Heroku</li>
-                            <li>AWS</li>
-                        </ul>
+                    <div className="card-text">
+                        <div className="latest-technologies">
+                            <ul>
+                                <li>Python</li>
+                                <li>Javascript (ES6+)</li>
+                                <li>React</li>
+                                <li>Node.js</li>
+                            </ul>
+                            <ul>
+                                <li>HTML & CSS</li>
+                                <li>Express</li>
+                                <li>MongoDB</li>
+                                <li>MySQL</li>
+                            </ul>
+                            <ul>
+                                <li>Heroku</li>
+                                <li>AWS</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
