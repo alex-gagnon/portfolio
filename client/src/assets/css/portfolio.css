@@ -1,3 +1,11 @@
+body {
+    background-color: whitesmoke;
+}
+
+.navbar-toggler Button {
+    margin: 20px 0;
+}
+
 #portfolio {
     margin-top: 80px;
     color: #1d1f20;
@@ -35,6 +43,10 @@
     pointer-events: none;
 }
 
+.card {
+    background-color: transparent;
+}
+
 p span {
     font-size: 14px;
 }
@@ -54,18 +66,14 @@ p span {
 }
 
 /* Experience */
-#row-experience {
+.job-name {
+    font-size: .8rem;
+}
+@media only screen and (min-width: 500px) {
     /* Keep Nav buttons close together so Tab Content does not change spacing. */
-    height: 3rem;
-}
-
-.job-info h4 {
-    font-size: 16px;
-}
-
-.job-info h5, .job-info li {
-    max-width: 85%;
-    font-size: 14px;
+    #row-experience {
+        height: 3rem;
+    }
 }
 
 /* Contact */
