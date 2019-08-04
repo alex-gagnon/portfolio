@@ -24,27 +24,27 @@ function experience(resume) {
                                 <Col sm={3}>
                                     <Nav variant="pills" className="flex-column">
                                         <Nav.Item>
-                                            <Nav.Link eventKey={i}>{name}</Nav.Link>
+                                            <Nav.Link eventKey={i}><span className="job-name">{name}</span></Nav.Link>
                                         </Nav.Item>
                                     </Nav>
                                 </Col>
-                                <Col sm={9}>
+                                <Col sm={6}>
                                     <TabContent>
                                         <TabPane eventKey={i}>
-                                            <div className="job-info">
-                                                <h4><span>{position} <span
-                                                    style={{color: '#888'}}>@ {name}</span></span>
-                                                </h4>
-                                                <h5>
-                                                    {`${friendlyDates(employment_status.started)} - ${(
-                                                        (employment_status.current && 'Present') ||
-                                                        (!employment_status.current && friendlyDates(employment_status.ended))
-                                                    )}`}
-                                                </h5>
+                                            <h4><span>{position} <span
+                                                style={{color: '#888'}}>@ {name}</span></span>
+                                            </h4>
+                                            <h5>
+                                                {`${friendlyDates(employment_status.started)} - ${(
+                                                    (employment_status.current && 'Present') ||
+                                                    (!employment_status.current && friendlyDates(employment_status.ended))
+                                                )}`}
+                                            </h5>
+                                            <div>
                                                 <ul>
                                                     {experience.map((item) =>
                                                         <li key={item}>
-                                                            <span className='angle-right-arrows'>&#187;</span> {item}
+                                                                <span className='angle-right-arrows'>&#187;</span> {item}
                                                         </li>
                                                     )}
                                                 </ul>
