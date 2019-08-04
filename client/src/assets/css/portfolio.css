@@ -3,7 +3,7 @@ body {
 }
 
 .navbar-toggler {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 #portfolio {
@@ -12,7 +12,7 @@ body {
 }
 
 .portfolio-section {
-    margin: 15vh 0;
+    margin: 12vh 0;
 }
 
 /* Return to top button */
@@ -28,11 +28,6 @@ body {
     font-size: 14px;
 }
 
-
-/* Portfolio section styling */
-.portfolio-section-header {
-}
-
 /* Prevent Navigation bar overlap of anchors */
 .anchor::before {
     display: block;
@@ -45,6 +40,10 @@ body {
 
 .card {
     background-color: transparent;
+}
+
+.card-text, .card-link {
+    padding: 15px;
 }
 
 p span {
@@ -66,13 +65,41 @@ p span {
 }
 
 /* Experience */
+
 .job-name {
+    text-align: center;
     font-size: .8rem;
 }
-@media only screen and (min-width: 500px) {
+
+.job-experience {
+    padding: 15px;
+}
+
+.job-experience * {
+    font-size: .66rem;
+}
+
+@media only screen and (min-width: 800px) {
     /* Keep Nav buttons close together so Tab Content does not change spacing. */
+    .experience {
+        min-height: 400px;
+    }
+
     #row-experience {
         height: 3rem;
+    }
+
+    .job-name {
+        font-size: 1rem;
+        text-align: initial;
+    }
+
+    .job-experience {
+        padding: 0;
+    }
+
+    .job-experience * {
+        font-size: .85rem;
     }
 }
 
