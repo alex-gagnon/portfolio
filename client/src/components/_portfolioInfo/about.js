@@ -26,9 +26,6 @@ function about() {
 
                             Most recently, I have joined the Firebrand Technologies QA Team.</span>
                         </p>
-                        <p>
-                            <span>Here are some of the technologies I have been working with lately:</span>
-                        </p>
                     </div>
                 </div>
             </div>
