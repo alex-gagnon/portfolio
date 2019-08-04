@@ -30,21 +30,21 @@ class GeneratePDF extends Component {
                     <Col key='pdf-col'>
                         <PDFExport key='pdf-export'
                                    author="Alexander Gagnon"
-                                   paperSize={'letter'}
                                    fileName="Alexander_Gagnon_Resume.pdf"
                                    title="Alexander Gagnon Resume"
+                                   paperSize="A3"
+                                   scale={1}
                                    subject="Resume"
                                    keywords={"experience, education, skills, " +
                                    "interests, projects, qa, development, javascript, css, html, python," +
                                    "jquery, mongodb, mysql, sql, heroku, git, jira, fiddler, postman, node,js," +
-                                   "express, flask, website, software qa"}
+                                   "express, flask, website, software qa, aws, mssql"}
                                    ref={(r) => this.resume = r}>
                             {/* Include Resume component */}
                             <Resume key={'super-resume'}/>
                         </PDFExport>
                     </Col>
                 </Row>
-
             </Col>
         )
     }
