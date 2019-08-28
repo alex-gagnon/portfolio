@@ -10,8 +10,7 @@ function introduction(resume) {
                 </h1>
                 <h2 id="portfolio-intro-summary m-5">
                     <span id="portfolio-intro">
-                        I am a {(resume.position && resume.position.toLowerCase())} and I like to build
-                        quality solutions.
+                        I am currently working as a {(resume.position && resume.position.toLowerCase())}
                     </span>
                 </h2>
             </div>
