@@ -1,5 +1,5 @@
 body {
-    background-color: whitesmoke;
+    background-color: #8EC38D;
 }
 
 .navbar-toggler {
@@ -21,7 +21,7 @@ body {
     bottom: 0;
     right: 0;
     margin: 14px;
-    padding: 8px;
+    padding: 6px;
 }
 
 #portfolio-intro-summary {
@@ -40,6 +40,11 @@ body {
 
 .card {
     background-color: transparent;
+    box-shadow: 1px 2px 8px #000;
+}
+
+.card-header {
+    background-color: #49180D;
 }
 
 .card-text, .card-link {
@@ -47,7 +52,7 @@ body {
 }
 
 p span {
-    font-size: 14px;
+    font-size: 24px;
 }
 
 /* About */
@@ -58,10 +63,6 @@ p span {
 
 .latest-technologies ul {
     font-size: 16px;
-}
-
-.latest-technologies li:nth-child(even) {
-    background-color: #ddd;
 }
 
 /* Experience */
@@ -76,7 +77,11 @@ p span {
 }
 
 .job-experience * {
-    font-size: .66rem;
+    font-size: 1.2rem;
+}
+
+.nav-link:active {
+    color: #FE947D;
 }
 
 @media only screen and (min-width: 800px) {
@@ -105,6 +110,7 @@ p span {
 
 /* Contact */
 #contact-footer {
+    background-color: #49180D;
     display: flex;
     justify-content: center;
 }
@@ -115,10 +121,10 @@ p span {
 
 #contact-footer ul li {
     margin: 20px 25px;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .contact-footer-item, .contact-footer-item:active,
 .contact-footer-item:focus, .contact-footer-item:hover {
-    color: #333;
+    color: #8EC38D;
 }
