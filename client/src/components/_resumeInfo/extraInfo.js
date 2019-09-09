@@ -10,7 +10,7 @@ function extraInfo(resume) {
                 </div>
             </div>
             <div>
-                <h3 className="resume-header">Interests</h3>
+                <h3 className="resume-header">Awards</h3>
                 <div className="additional-info">
                     <p>{resume.awards && resume.awards.join(', ')}</p>
                 </div>
