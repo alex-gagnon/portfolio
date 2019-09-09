@@ -1,5 +1,14 @@
 body {
-    background-color: whitesmoke;
+    background-color: #8EC38D;
+}
+
+.bg-light {
+    background-color: rgba(0, 0, 0, .4) !important;
+}
+
+.btn {
+    padding: .8rem 1.4rem;
+    font-size: 1.5rem;
 }
 
 .navbar-toggler {
@@ -21,7 +30,7 @@ body {
     bottom: 0;
     right: 0;
     margin: 14px;
-    padding: 8px;
+    padding: 6px;
 }
 
 #portfolio-intro-summary {
@@ -39,7 +48,13 @@ body {
 }
 
 .card {
-    background-color: transparent;
+    background-color: #D4F7D4;
+    box-shadow: 1px 2px 8px #000;
+}
+
+.card-header {
+    background-color: #49180D;
+    color: #D4F7D4;
 }
 
 .card-text, .card-link {
@@ -47,7 +62,7 @@ body {
 }
 
 p span {
-    font-size: 14px;
+    font-size: 24px;
 }
 
 /* About */
@@ -58,10 +73,6 @@ p span {
 
 .latest-technologies ul {
     font-size: 16px;
-}
-
-.latest-technologies li:nth-child(even) {
-    background-color: #ddd;
 }
 
 /* Experience */
@@ -76,7 +87,15 @@ p span {
 }
 
 .job-experience * {
-    font-size: .66rem;
+    font-size: 1.2rem;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #FD3A0F;
+}
+
+a {
+    color: #FD3A0F;
 }
 
 @media only screen and (min-width: 800px) {
@@ -99,12 +118,23 @@ p span {
     }
 
     .job-experience * {
-        font-size: .85rem;
+        font-size: 1.4rem;
     }
+}
+
+.btn-outline-info, btn-outline-info:active {
+    color: #FD3A0F;
+    border-color: #FD3A0F;
+}
+
+.btn-outline-info:hover, .btn-outline-info:focus {
+    color: #B83214;
+    border-color: #B83214;
 }
 
 /* Contact */
 #contact-footer {
+    background-color: #49180D;
     display: flex;
     justify-content: center;
 }
@@ -115,10 +145,10 @@ p span {
 
 #contact-footer ul li {
     margin: 20px 25px;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .contact-footer-item, .contact-footer-item:active,
 .contact-footer-item:focus, .contact-footer-item:hover {
-    color: #333;
+    color: #D4F7D4;
 }
