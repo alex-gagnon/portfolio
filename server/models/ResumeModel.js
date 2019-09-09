@@ -74,7 +74,7 @@ const resumeSchema = new Schema({
         name: String,
         description: String
     }],
-    interests: [String],
+    awards: [String],
 });
 
 
